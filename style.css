@@ -34,7 +34,7 @@
     position: absolute;
     width: 181px;
     height: 33px;
-    left: 805px;
+    left: 705px;
     top: 15px;
 
     font-style: normal;
@@ -50,7 +50,7 @@
     position: absolute;
     width: 181px;
     height: 33px;
-    left: 905px;
+    left: 805px;
     top: 15px;
 
     font-style: normal;
@@ -66,7 +66,7 @@
     position: absolute;
     width: 181px;
     height: 33px;
-    left: 1005px;
+    left: 905px;
     top: 15px;
 
     font-style: normal;
@@ -82,7 +82,7 @@
     position: absolute;
     width: 181px;
     height: 33px;
-    left: 1155px;
+    left: 1055px;
     top: 15px;
 
     font-style: normal;
@@ -93,4 +93,20 @@
     align-items: center;  
     color: #000000; 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.m-button{
+    background-color: #93D500;
+    box-shadow: inset 0px -2.99377px 2.99377px rgba(0, 0, 0, 0.25);
+    border-radius: 27.6924px;
+    border: transparent;   
+    position: absolute;
+    width: 130.23px;
+    height: 29.19px;
+    left: 1136.06px;
+    top: 16.47px; 
+    font-weight: bold;
+}   
+.m-button:hover{
+    background-color: #7bb303;
+    cursor: pointer;
 }
