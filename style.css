@@ -194,5 +194,11 @@
     height: 245px;
     background-color: black;
 }
+.ad-lowerft{
+    position: absolute;
+    width: 1728px;
+    height: 122px;
 
+    background: #262626;
+}
 
