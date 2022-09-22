@@ -197,3 +197,144 @@
     height: 245px;
     background-color: black;
 }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "neue-haas-grotesk-display",sans-serif;
+}
+.vd-navbar{
+
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E3E3E3;
+    box-shadow: 0px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+}
+.vd-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+    font-weight: bold;
+}
+.vd-navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.vd-navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#20960081;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.20s;
+
+}
+.vd-navbar ul li :hover::after{
+    width: 100%;
+}
+
+.vdgh-logo{
+    position: absolute;
+    width: 30px;
+    height: 51px;
+    left: 50px;
+    top: 5px;
+    /* filter:drop-shadow(2px 2px 2px gray); */
+}
+.vd-heading{
+    color: #2a2a2a;
+    text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+    font-style: normal;
+    font-weight: 550;
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    width: 509px;
+    height: 48px;
+    padding-left: 80px;
+    
+   
+}
+
+.vd-button{
+    background-color: #93D500;
+    border-color: #5e8a00;
+    border-radius: 27.6924px;
+    border: transparent;   
+    width: 130.23px;
+    height: 29.19px;
+    font-weight: bold;
+    box-shadow: #2a2a2a;
+    box-shadow: 0px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+    
+
+}   
+.vd-button:hover{
+    background-color: #8fc025e7;
+    cursor: pointer;
+
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .vd-sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .vd-sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .vd-sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .vd-sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .vd-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .vd-sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .vdsidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+   
