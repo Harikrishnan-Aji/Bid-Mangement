@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "neue-haas-grotesk-display",sans-serif;
+}
+.a-navbar{
+
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E3E3E3;
+    box-shadow: 0px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+}
+.a-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+    font-weight: bold;
+}
+.a-navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.a-navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#20960081;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.20s;
+
+}
+.a-navbar ul li :hover::after{
+    width: 100%;
+}
+
+.gh-logo{
+    position: absolute;
+    width: 30px;
+    height: 51px;
+    left: 20px;
+    top: 5px;
+    /* filter:drop-shadow(2px 2px 2px gray); */
+}
+
+.a-heading{
+    color: #2a2a2a;
+    text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+    font-style: normal;
+    font-weight: 550;
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    width: 509px;
+    height: 48px;
+    padding-left: 56px;
+    
+   
+}
+
+.a-button{
+    background-color: #93D500;
+    border-color: #5e8a00;
+    border-radius: 27.6924px;
+    border: transparent;   
+    width: 130.23px;
+    height: 29.19px;
+    font-weight: bold;
+    box-shadow: #2a2a2a;
+    box-shadow: 0px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+    
+
+}   
+.a-button:hover{
+    background-color: #8fc025e7;
+    cursor: pointer;
+}
+
+.gavel{
+    width: 100%;
+    height: 100%;
+    filter: brightness(25%);
+}
+
+.text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 88px;
+    letter-spacing: -0.005em;
+
+color: #FFFFFF;
+
+  }
+
+.Home-icon {
+    position: absolute;
+    top: 60%;
+    left: 41.1%;
+    transform: translate(-50%, -50%);
+    width:32px; height:32px;
+
+}
+
+.page {
+    /*font-family: Montserrat;*/
+    font-style: Regular;
+    position: absolute;
+    font-size: 24px;
+    color: #d0d0d0;
+    top: 60.5%;
+    left: 52.6%;
+    transform: translate(-50%, -50%);
+    /*width:36px; height:36px;*/
+}
+
+.pythonimage{
+    top: 60.5%;
+    left: 52.6%;
+}
