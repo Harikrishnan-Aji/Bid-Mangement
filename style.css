@@ -238,12 +238,104 @@ body {
 }
 
 
+.side-portion ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.side-portion ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.side-portion ul li:hover {
+	background: #06060617;
+}
+.side-portion ul li a {
+	text-decoration: none;
+	color: rgb(5, 5, 5);
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.side-portion ul li a i {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 23px;
+}
+
+/* year */
+.year-portion ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.year-portion ul li {
+	font-size: 16px;
+	padding: 15px 0px;
+	padding-left: 20px;
+	transition: 500ms;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.year-portion ul li:hover {
+	background: #06060617;
+}
+.year-portion ul li a {
+	text-decoration: none;
+	color: rgb(5, 5, 5);
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.year-portion ul li a i {
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 23px;
+}
 
 
 
 
 
 
+
+
+
+/*#navbtn {
+	display: inline-block;
+	margin-left: 70px;
+	font-size: 20px;
+	transition: 500ms color;
+}
+#checkbox {
+	display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+	width: 60px;
+}
+#checkbox:checked ~ .body .side-bar .user-p{
+	visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span{
+	display: none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of approver dash board */
 
 
 .ad-lowerft{
