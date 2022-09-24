@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: #D9D9D9;
+    --color-dark: #1D2231;
+    --text-grey: #f5f7f8;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 155.5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--main-color);
+    color: rgb(4, 4, 4);
+    overflow-y: auto;
+    transition: width 500ms;
+}
+
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 0rem;
+}
+
+
+.sidebar-menu {
+    padding: 0rem;
+}
+.sidebar-a:hover{
+    background-color: #949292;
+    height: 50px;
+    width: 240px;
+}
+.sidebar li {
+    margin-bottom: 1.5rem;
+}
+
+
+.sidebar a {
+    color: rgb(10, 10, 10);
+    font-size: .8rem;
+}
+
+
+.sidebar a span:last-child {
+    padding-left: .6rem;
+}
+
+
+#sidebar-toggle:checked ~ .sidebar {
+    width: 60px;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+    display: none;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li {
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-toggle:checked ~ .main-content {
+    margin-left: 60px;
+}
+
+#sidebar-toggle:checked ~ .main-content header {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+.main-content {
+    position: relative;
+    margin-left: 200px;
+    transition: margin-left 500ms;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "neue-haas-grotesk-display",sans-serif;
+}
+.vd-navbar{
+
+    width: 100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E3E3E3;
+    box-shadow: 0px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+}
+.vd-navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+    font-weight: bold;
+}
+.vd-navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.vd-navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#20960081;
+    position: absolute;
+    left: 0%;
+    bottom: -10px;
+    transition: 0.20s;
+
+}
+.vd-navbar ul li :hover::after{
+    width: 100%;
+}
+
+.vdgh-logo{
+    position: absolute;
+    width: 30px;
+    height: 51px;
+    left: 160px;
+    top: 5px;
+    /* filter:drop-shadow(2px 2px 2px gray); */
+}
+
+.vd-heading{
+    color: #2a2a2a;
+    text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+    font-style: normal;
+    font-weight: 550;
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    width: 509px;
+    height: 48px;
+    padding-left: 190px;
+    
+   
+}
+
+.vd-button{
+    background-color: #93D500;
+    border-color: #5e8a00;
+    border-radius: 27.6924px;
+    border: transparent;   
+    width: 130.23px;
+    height: 29.19px;
+    font-weight: bold;
+    box-shadow: #2a2a2a;
+    box-shadow: 0px 1px 0px 0.5px rgba(0, 0, 0, 0.25);
+    
+
+}   
+.vd-button:hover{
+    background-color: #8fc025e7;
+    cursor: pointer;
+
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input {
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    height: 38px;
+}
+
+
+
+
+main {
+    margin-top: 0px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 2rem 20rem;
+}
+
+
+
+th, td {
+    font-size: .9rem;
+    padding: 1rem 2rem;
+    color: var(--color-dark);
+}
+
+td {
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+
+
+.td-team {
+    display: flex;
+    align-items: center;
+}
+
+
+.summary-single {
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.summary-single span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1rem;
+}
+
+.summary-single h5 {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    margin-bottom: 0rem !important;
+}
+
+.summary-single small {
+    font-weight: 700;
+    color: var(--text-grey);
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-center button {
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: .4rem 1rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        width: 60px;
+        z-index: 150;
+    }
+
+    .sidebar .sidebar-header h3 span,
+    .sidebar li span:last-child {
+        display: none;
+    }
+
+    .sidebar .sidebar-header,
+    .sidebar li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .main-content header {
+        left: 100px;
+        width: calc(100% - 100px);
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar {
+        width: 240px;
+    }
+
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+    #sidebar-toggle:checked ~ .sidebar li span:last-child {
+        display: inline;
+    }
+
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar li {
+        display: block;
+    }
+
+    #sidebar-toggle:checked ~ .main-content {
+        margin-left: 60px;
+    }
+
+    #sidebar-toggle:checked ~ .main-content header {
+        left: 60px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .dash-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+   
+    
+    .summary {
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dash-cards {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+}
+
