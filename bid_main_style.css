@@ -266,7 +266,7 @@
 }
 .m-b-middle2{
     width: 100%;
-    height: 500px;
+    height: 700PX;
     background-color: #969696ad;
 }
 .m-b-middle2-heading{
@@ -276,6 +276,162 @@
     justify-content: center;
     padding-top: 22px;
 }
+
+/* ---------------------- Active bid in main page ends ------------------------*/
+
+  .m-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .m-card:hover{
+    transform: scale(1.04);
+    transition: 400ms;
+    cursor: pointer;
+    
+  }
+  .m-container {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 220px;
+    margin-top: 70px;
+  }
+
+  .m-card-head {
+    position: relative;
+    height: 252px;
+  }
+  
+  .m-card-logo {
+    width: 200px;
+    height: 137px;
+  }
+  
+  .m-product-img {
+    position: absolute;
+    left: 0;
+    margin-top: -16px;
+    margin-left: 50px;
+  }
+  
+  .m-product-detail {
+    padding: 0 20px;
+    font-size: 11px;
+    color: #fff;
+  }
+  
+  .m-product-detail h2 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .m-back-text {
+    display: inline-block;
+    font-size: 125px;
+    font-weight: 900;
+    margin-left: -7px;
+    margin-top: -12px;
+    opacity: 0.1;
+  }
+  
+  .m-card-body {
+    height: 110px;
+    background: rgba(255, 255, 255, 0.63);
+    border-radius: 0 0 25px 25px;
+  }
+  
+  .m-product-title {
+    padding: 10px 9px 4px 12px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  .m-badge {
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    background: #11e95b;
+    padding: 2px 5px;
+    border-radius: 4px;
+    top: -47px;
+    margin-left: -12px;
+  }
+  .m-product-caption {
+    display: block;
+    padding: 0 20px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .m-product-rating {
+    padding: 0 20px;
+    font-size: 11px;
+  }
+  .m-product-rating i.grey {
+    color: #acacab;
+  } 
+  .m-product-size h4 {
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .m-product-size:before,
+  .m-product-size:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .m-product-color h4 {
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .m-product-price {
+    position: absolute;
+    background: #11e95b;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+    margin-left: 28px;
+    box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+  }
+  .m-product-price b {
+    margin-left: 5px;
+  }
+/* ---------------------- Active bid in main page ends ------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
 .m-footer{
     width: 100%;
     height: 245px;
