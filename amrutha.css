@@ -263,3 +263,27 @@ p {
     color: #262626;
     transition: .5s;
   }
+  main {
+    margin-top: 0px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 2rem 20rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    
+    padding: 8px;
+  }
+  thead{
+    background: rgb(152, 156, 148); color: rgb(12, 10, 10);
+    
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d2d4d4d8;
+  }
