@@ -190,6 +190,8 @@ p {
    padding: .375rem .5625rem;
    font-weight: normal;
 }
+
+
 .ad-footer{
     width: 100%;
     height: 245px;
@@ -247,12 +249,12 @@ p {
 
 
 
-  .ab-f-ul-li a:hover {
+  .ad-f-ul-li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     text-decoration:none;
   }
   
-  .ab-f-ul-li a .fa {
+  .ad-f-ul-li a .fa {
     width: 100%;
     height:100%;
     display:block;
@@ -263,6 +265,8 @@ p {
     color: #262626;
     transition: .5s;
   }
+
+
   main {
     margin-top: 0px;
     background: #f1f5f9;
@@ -287,3 +291,4 @@ p {
   tr:nth-child(even) {
     background-color: #d2d4d4d8;
   }
+  
