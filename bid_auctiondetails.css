@@ -224,6 +224,56 @@ border-radius: 14px;
     letter-spacing: 1px;
 }
 
+/* course overview */
+
+.a-overview{
+    background: #ffffff;
+/* border-radius: 14px; */
+    padding: 150px; 
+    width: 250px;
+    height: 30px;  
+    transform: translate(126%, -50%);
+    filter: drop-shadow(10px 2px 9px #c8c6c6);
+}
+
+.head{
+    color: #000000;
+    position: top;
+    top: 20%;
+    left: 70%;
+    transform: translate(30px, -150px);
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 88px;
+    letter-spacing: 0px;
+}
+
+.a-ovdetails{
+    position: top;
+    top: 30%;
+    left: 70%;
+    transform: translate(10%, -120%);
+}
 
 
+.right{
+    transform: translate(-120px, 90px);
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+}
+
+.left{
+    transform: translate(45px, 70px);
+    text-align: right;
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    white-space: nowrap;
+    
+}
 
