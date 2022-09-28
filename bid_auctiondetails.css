@@ -168,3 +168,62 @@ color: #FFFFFF;
 
 }
 
+/*timer and overview*/
+
+.a-roundedrec{
+    background: #04152E;
+border-radius: 14px;
+    padding: 50px; 
+    width: 510px;
+    height: 0px;  
+    transform: translate(5%, 60%);
+}
+
+.a-curr {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 24px;
+    line-height: 88px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.a-amount{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    src: url('./au_fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('./au_fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+    font-size: 36px;
+    line-height: 88px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 72%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.a-end{
+    color: #FFFFFF;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 24px;
+    line-height: 88px;
+    letter-spacing: 1px;
+}
+
+
+
+
