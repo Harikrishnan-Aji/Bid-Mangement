@@ -28,15 +28,15 @@
         <div class="a-footer"></div>
     </div>
     <div>
-        <img src="./au_image/wooden-gavel 1.jpg" alt="bid" class="a-gavel">
+        <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/au_image/wooden-gavel%201.jpg?raw=true" alt="bid" class="a-gavel">
         <div class="a-text-centered">Auction Details</div>
     </div>
-    <img src="./au_image/ion_home-outline.png" alt="Home" class="a-Home-icon">
+    <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/au_image/ion_home-outline.png?raw=true" alt="Home" class="a-Home-icon">
     <div class="a-page">Home / Auction Details</div>
 
     <div class="content" style="display:flex";>
     <div class="a-container">
-        <img src="./au_image/rxezjyf4ojx41 1.png" alt="python" class="a-pythonimage"> 
+        <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/au_image/rxezjyf4ojx41%201.png?raw=true" alt="python" class="a-pythonimage"> 
         
     </div> 
       
@@ -47,7 +47,7 @@
            </div>
         </div>
     
-    <!-- timer and overview -->
+    <!-- timer -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <style>
 .a-roundedrec {
@@ -59,13 +59,99 @@
         <div class="a-curr">Current Bid</div>
         <div class="a-amount">$210.67</div>
         <div class="a-end">Ends in</div>
-
         <!-- javascript for countdown -->
+        <div class="countdown">
+            <div class="countdown-1">
+                <p style="font-size: 24px;color: white;" id="demo"></p>
+                <script>
+                var deadline = new Date("Jan 5, 2023 15:37:25").getTime();
+                var x = setInterval(function() {
+                var now = new Date().getTime();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("demo").innerHTML = days + "d "
+                + hours + "h " + minutes + "m " + seconds + "s ";
+                    if (t < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+                </script>
 
-        
+            </div>
+            
+        </div>
+</div>
 
-    </div>
+
+
+
+        <!-- course overview  -->
+
+        <div class="a-overview">
+            
+            <p class="head">
+                Course Overview
+            </p>
+            <div class="a-ovdetails">
+               
+            <div class="line">
+                <p class="right">
+                    Level :
+                </p>
+                <p class="left">
+                    Advanced 
+                </p>
+            </div>
+            <div class="line">
+
+                <p class="right">
+                    Expected Duration :
+                </p>
+                <p class="left">
+                    40 hours
+                </p>
+            </div>
+            <div class="line">
+                <p class="right">
+                    Minimum Required Experience :
+                </p>
+                <p class="left">
+                    1 years
+                </p>
+            </div>
+            <div class="line">
+                <p class="right">
+                    Maximum Bid Amount :
+                </p>
+                <p class="left">
+                    500$
+                </p>
+            </div>
+            <div class="line">
+                <p class="right">
+                    Live Training :
+                </p>
+                <p class="left">
+                    yes
+                </p>
+            </div>
+            </div>
+        </div>
+
+<!-- place bid -->
+<div class="a-placebid1">
+    <p class="bidnow1">BID NOW<br>Bid Amount : Maximum Bid 500$</p>
+    
+    <button class="button rounded-corners"> Place Bid Now</button>
+    
+</div>
+
     <br><br><br><br><br>
+
     jsahdfuihfh
 </body>
 </html>

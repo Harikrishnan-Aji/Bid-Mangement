@@ -176,7 +176,7 @@ border-radius: 14px;
     padding: 50px; 
     width: 510px;
     height: 0px;  
-    transform: translate(5%, 60%);
+    transform: translate(5%, 80%);
 }
 
 .a-curr {
@@ -224,6 +224,120 @@ border-radius: 14px;
     letter-spacing: 1px;
 }
 
+.countdown{
+    display: flex;
+    width: 56%;
+    height: 50px;
+    margin-left: 261px;
 
 
+}
+#demo{
+    width: 179px;
+    height: 35px;
+    margin-top: 4px;
+    margin-left: 24px;
+}
+.countdown-1{
+    scale: 1px;
+}
 
+.countdown div{
+    flex-basis: 100px;
+    
+    
+}
+
+/* course overview */
+
+.a-overview{
+    background: #ffffff;
+/* border-radius: 14px; */
+    padding: 150px; 
+    width: 250px;
+    height: 30px;  
+    transform: translate(126%, -50%);
+    filter: drop-shadow(10px 2px 9px #c8c6c6);
+}
+
+.head{
+    color: #000000;
+    position: top;
+    top: 20%;
+    left: 70%;
+    transform: translate(30px, -150px);
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 88px;
+    letter-spacing: 0px;
+}
+
+.a-ovdetails{
+    position: top;
+    top: 30%;
+    left: 70%;
+    transform: translate(10%, -120%);
+}
+
+
+.right{
+    transform: translate(-120px, 90px);
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+}
+
+.left{
+    transform: translate(45px, 70px);
+    text-align: right;
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    white-space: nowrap;
+    
+}
+
+/* place bid */
+
+.a-placebid1{
+    display: flex;
+    background: #ffffff;
+    padding: 130x; 
+    width: 610px;
+    height: 160px;  
+    transform: translate(5%, -130%);
+    filter: drop-shadow(10px 2px 9px #c8c6c6);
+}
+
+.bidnow1{
+    color: #000000;
+    position: top;
+    top: 40%;
+    left: 50%;
+    transform: translate(40px, 0px);
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 0px;
+}
+
+.button {
+  position: absolute;
+  background-color: #04EF2A;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold ;
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  width: 250px;
+  height: 37px;
+  border-radius: 15px 15px;
+  transform: translate(150px, 100px);
+}

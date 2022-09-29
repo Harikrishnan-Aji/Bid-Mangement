@@ -433,37 +433,43 @@
 } */
 .m-footer{
     width: 100%;
-    height: 245px;
+    height: 150px;
     background-color: black;
 }
 .m-f-gh-logo{
     padding-left: 20px;
     padding-top: 20px;
+    width: 130px;
 }
-.m-f-bar{
+/* .m-f-bar{
     width: 130px;
     height: 1px;
     border: 7px solid #000000;
     box-shadow: inset 0px 4px 4px rgb(213 213 213 / 19%);
     position:absolute;
     left: 32px;
-}
+} */
 
 .m-f-socialmedia{
-    scale: 0.3;
+    scale: 0.5;
+    margin-top: -59px;
+    margin-left: 10px;
+    margin-left: -149px;
+    color: rgb(0, 0, 0);
   }
+
   
   .m-f-ul {
-    padding-top: 2%;
-    left: -88%;
+   
     transform: translate(-50%, -50%);
-    margin-left: -490px;
+    margin-left: 1548px;
     display:flex;
+  
   }
   
  .m-f-ul-li {
     list-style: none;
-    
+    scale: 2;
   }
   
   .m-f-ul-li a {
@@ -497,13 +503,13 @@
     line-height: calc(60px - 12px);
     font-size:24px;
     color: #ffffff;
-    
-    scale: 2;
+
+
   }
 
   .m-f-ul-li a .fa:hover{
     color: #93D500;
-    transform: scale(1.2);
+    transform: scale(1);
   }
 
 .m-lowerfooter{
