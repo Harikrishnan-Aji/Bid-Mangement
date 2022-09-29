@@ -28,15 +28,15 @@
         <div class="a-footer"></div>
     </div>
     <div>
-        <img src="./au_image/wooden-gavel 1.jpg" alt="bid" class="a-gavel">
+        <img src="https://accesshub-my.sharepoint.com/:i:/r/personal/sankrishnan_guidehouse_com/Documents/project-audetails/wooden-gavel%201.jpg?csf=1&web=1&e=1BgJvj" alt="bid" class="a-gavel">
         <div class="a-text-centered">Auction Details</div>
     </div>
-    <img src="./au_image/ion_home-outline.png" alt="Home" class="a-Home-icon">
+    <img src="https://accesshub-my.sharepoint.com/:i:/r/personal/sankrishnan_guidehouse_com/Documents/project-audetails/ion_home-outline.png?csf=1&web=1&e=mzUlEs" alt="Home" class="a-Home-icon">
     <div class="a-page">Home / Auction Details</div>
 
     <div class="content" style="display:flex";>
     <div class="a-container">
-        <img src="./au_image/rxezjyf4ojx41 1.png" alt="python" class="a-pythonimage"> 
+        <img src="https://accesshub-my.sharepoint.com/:i:/r/personal/sankrishnan_guidehouse_com/Documents/project-audetails/rxezjyf4ojx41%201.png?csf=1&web=1&e=w3KPhJ" alt="python" class="a-pythonimage"> 
         
     </div> 
       
@@ -59,9 +59,32 @@
         <div class="a-curr">Current Bid</div>
         <div class="a-amount">$210.67</div>
         <div class="a-end">Ends in</div>
-    </div>
         <!-- javascript for countdown -->
+        <div class="countdown">
+            <div class="countdown-1">
+                <p style="font-size: 24px;color: white;" id="demo"></p>
+                <script>
+                var deadline = new Date("Jan 5, 2023 15:37:25").getTime();
+                var x = setInterval(function() {
+                var now = new Date().getTime();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("demo").innerHTML = days + "d "
+                + hours + "h " + minutes + "m " + seconds + "s ";
+                    if (t < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+                </script>
 
+            </div>
+            
+        </div>
+</div>
 
 
 
@@ -119,9 +142,16 @@
             </div>
         </div>
 
-
+<!-- place bid -->
+<div class="a-placebid1">
+    <p class="bidnow1">BID NOW<br>Bid Amount : Maximum Bid 500$</p>
+    
+    <button class="button rounded-corners"> Place Bid Now</button>
+    
+</div>
 
     <br><br><br><br><br>
+
     jsahdfuihfh
 </body>
 </html>
