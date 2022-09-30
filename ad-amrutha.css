@@ -313,8 +313,6 @@ p {
     background-color: #d2d4d4d8;
   }
 
-
-
   .ad-footer{
     width: 100%;
     height: 150px;
@@ -334,67 +332,71 @@ p {
     left: 32px;
 } */
 
+
+
 .ad-f-socialmedia{
-    scale: 0.5;
-    margin-top: -59px;
-    margin-left: 10px;
-    margin-left: -149px;
-    color: rgb(0, 0, 0);
-  }
-
-  
-  .ad-f-ul {
-   
-    transform: translate(-50%, -50%);
-    margin-left: 1548px;
-    display:flex;
-  
-  }
-  
- .ad-f-ul-li {
-    list-style: none;
-    scale: 2;
-  }
-  
-  .ad-f-ul-li a {
-    position: relative;
-    width:60px;
-    height:60px;
-    display:block;
-    text-align:center;
-    margin:0 20px;
-    border-radius: 50%;
-    padding: 6px;
-    box-sizing: border-box;
-    text-decoration:none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background-color: transparent;
-    transition: .5s;
-    color: white;
-  }
-
-  .ad-f-ul-li a:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    text-decoration:none;
-  }
-  
-  .ad-f-ul-li a .fa {
-    width: 100%;
-    height:100%;
-    display:block;
-    background: transparent;
-    border-radius: 50%;
-    line-height: calc(60px - 12px);
-    font-size:24px;
-    color: #ffffff;
+  scale: 0.5;
+  margin-top: -59px;
+  margin-left: 10px;
+  margin-left: -149px;
+  color: rgb(0, 0, 0);
+}
 
 
-  }
+.ad-f-ul {
+ 
+  transform: translate(-50%, -50%);
+  margin-left: 1548px;
+  display:flex;
 
-  .ad-f-ul-li a .fa:hover{
-    color: #93D500;
-    transform: scale(1);
-  }
+}
+
+.ad-f-ul-li {
+  list-style: none;
+  scale: 2;
+}
+
+.ad-f-ul-li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 20px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background-color: transparent;
+  transition: .5s;
+  color: rgb(15, 13, 13);
+}
+
+.ad-f-ul-li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.ad-f-ul-li a .fa {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: transparent;
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #080606;
+
+
+}
+
+.ad-f-ul-li a .fa:hover{
+  color: #93D500;
+  transform: scale(1);
+}
+
+
 
 .ad-lowerfooter{
   background-color: #262626;
@@ -433,6 +435,9 @@ p {
   margin: 5px 6px;
 
 }
+
+
+  
 
 .ad-lf-additional-link{
 
