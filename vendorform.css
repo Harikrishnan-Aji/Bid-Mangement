@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "neue-haas-grotesk-display",sans-serif;
+}
 body {
     font-family: Arial;
     font-size: 17px;
@@ -21,7 +26,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    margin: 0 -16px;
+    margin: -10px -10px;
   }
   
   .col-25 {
@@ -144,4 +149,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .f-form{
+    margin-top: -334px;
+    margin-right: 120px;
+  }
+  .f-form label{
+    padding: -1px;
   }

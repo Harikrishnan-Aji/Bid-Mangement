@@ -1,67 +1,67 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Form</title>
+  <link rel="icon" href="https://pitstop.navigantbpm.com/wp-content/uploads/2021/07/cropped-acon-32x32.png" type="image/icon type">
+  <link rel="stylesheet" href="bid_main_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendorform.css">
 </head>
 <body>
-
-<h3>Contact Form</h3>
-
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
+    <div class="f-main">
+      <div class="f-navbar">
+        <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/gh-logo.png?raw=true" alt="error" class="f-gh-logo">        <h1 class="f-heading">Approver Active Bids </h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">News & Events</a></li>
+            <li><a href="">Contact</a></li>
+            <button class="f-button">Enroll Now</button>
+        </ul>
+      </div>
+      <div class="f-main-left">
+          <img src="https://cdn.devdojo.com/posts/images/March2021/python-app-development-what-can-you-build-with-python.jpg?auto=format&q=70&w=1280" alt="logo" class="f-card-logo">  
+      </div>
+      <div class="f-main-right">
+        <form action="" class="f-form">
+        <label for="fname"><i class="fa fa-user"></i> Course title </label>
+            <input type="text" id="fname" name="firstname" placeholder ="Enter your title">
+            <div class="row">
+            <div class="col-50">
+                    <label for="email"><i class="fa fa-envelope"></i> Duration</label>
+                    <input type="text" id="email" name="email" placeholder="Course Duration">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Expected Cost</label>
+                    <input type="text" id="adr" name="address" placeholder="Enter the Expected cost">
+                    <label for="city"><i class="fa fa-institution"></i> Skills</label>
+                    <input type="text" id="city" name="city" placeholder="Enter the skill Details">
+            </div>
+            <div class="col-50">
+                  <label for="cname">Experience</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Enter Experience">
+                  <label for="cname">Demo</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Enter url"> 
+                  <label for="expmonth">Bid ID</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Enter the course code">
+              </div>
+            </div>
+        <label>
+          <label for="subject">Description</label>
+            <textarea class = "dec" id="subject" name="subject" placeholder="Enter the Description"></textarea>
+          </label>
+        <center> <input type="submit" value="SUBMIT" class="btn"></center>
+      </div></div>
+      
+      </form>
+          
+      </div>
+      
+    </div>
+    
+  </div>
+  
 </body>
 </html>
