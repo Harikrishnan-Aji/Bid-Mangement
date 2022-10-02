@@ -593,3 +593,154 @@ border-radius: 14px;
 .f-main-left{
   float: left;
 }
+
+
+
+
+
+
+
+
+
+
+/* please rename the class name */
+
+.f-footer{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    margin-top: 10px;
+    
+}
+
+.f-f-gh-logo{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 130px;
+}
+
+
+.f-f-socialmedia{
+    scale: 0.5;
+    margin-top: -59px;
+    margin-left: 10px;
+    margin-left: -149px;
+    color: rgb(0, 0, 0);
+  }
+
+  
+  .f-f-ul {
+   
+    transform: translate(-50%, -50%);
+    margin-left: 1548px;
+    display:flex;
+  
+  }
+  
+ .f-f-ul-li {
+    list-style: none;
+    scale: 2;
+  }
+  
+  .f-f-ul-li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 20px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background-color: transparent;
+    transition: .5s;
+    color: white;
+  }
+
+  .f-f-ul-li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  .f-f-ul-li a .fa {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: transparent;
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #ffffff;
+
+
+  }
+
+  .f-f-ul-li a .fa:hover{
+    color: #93D500;
+    transform: scale(1);
+  }
+
+
+
+
+.f-lowerfooter{
+  background-color: #262626;
+  height: 89px;
+  width: 100%;
+  border-color: transparent;
+}
+.f-privacy-policy{
+
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 115%;
+  margin-right: auto;
+  margin-left: 3.625rem;
+  border: 1px;
+  margin-top: 23px;
+  background-color: #262626;
+  
+}
+.f-privacy-policy a{
+  text-decoration: none;
+  color: #c3ec0c;
+  background-color: #262626;
+  font-size: 18px;
+ 
+}
+.f-lowerfooter ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
+  font-size: 13px;
+  margin: 5px 6px;
+
+}
+
+
+.f-lf-additional-link{
+
+  text-decoration: none;
+  color: white;
+  
+}
+
+.f-body-form-bottom1{
+    width: 100%;
+    height: 50%;
+    scale: 1.5;
+
+}
+.f-body-form-bottom2{
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff00;
+}

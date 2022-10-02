@@ -7,8 +7,10 @@
 .f-main{
     width: 100%;
     height: 100%;
-  }
-    .f-navbar{
+    filter: drop-shadow(10px 2px 9px #c8c6c686);
+}
+
+.f-navbar{
   
       width: 100%;
       height:60px;
@@ -85,20 +87,14 @@
   .f-body{
     width: 100%;
     height: 100%;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
 
 
 
 
-  
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-* {
-	box-sizing: border-box;
-}
-
+ 
 body {
 	background: #f6f5f7;
 	display: flex;
@@ -107,7 +103,7 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
-	margin: -20px 0 50px;
+
 }
 
 h1 {
@@ -140,8 +136,8 @@ a {
 
 .f-body-button{
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #08cb01;
+	background-color: #08cb01;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -149,6 +145,8 @@ a {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: transform 80ms ease-in;
+    filter: drop-shadow(1px 2px 9px #44ca5880);
+
 }
 
 .f-body-button:active {
@@ -254,9 +252,7 @@ input {
 }
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: #ffffff;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -361,26 +357,22 @@ footer a {
 
 
 
-.m-footer{
+.f-footer{
     width: 100%;
     height: 150px;
     background-color: black;
+    margin-top: 10px;
+    
 }
-.m-f-gh-logo{
+
+.f-f-gh-logo{
     padding-left: 20px;
     padding-top: 20px;
     width: 130px;
 }
-/* .m-f-bar{
-    width: 130px;
-    height: 1px;
-    border: 7px solid #000000;
-    box-shadow: inset 0px 4px 4px rgb(213 213 213 / 19%);
-    position:absolute;
-    left: 32px;
-} */
 
-.m-f-socialmedia{
+
+.f-f-socialmedia{
     scale: 0.5;
     margin-top: -59px;
     margin-left: 10px;
@@ -389,7 +381,7 @@ footer a {
   }
 
   
-  .m-f-ul {
+  .f-f-ul {
    
     transform: translate(-50%, -50%);
     margin-left: 1548px;
@@ -397,12 +389,12 @@ footer a {
   
   }
   
- .m-f-ul-li {
+ .f-f-ul-li {
     list-style: none;
     scale: 2;
   }
   
-  .m-f-ul-li a {
+  .f-f-ul-li a {
     position: relative;
     width:60px;
     height:60px;
@@ -419,12 +411,12 @@ footer a {
     color: white;
   }
 
-  .m-f-ul-li a:hover {
+  .f-f-ul-li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     text-decoration:none;
   }
   
-  .m-f-ul-li a .fa {
+  .f-f-ul-li a .fa {
     width: 100%;
     height:100%;
     display:block;
@@ -437,18 +429,21 @@ footer a {
 
   }
 
-  .m-f-ul-li a .fa:hover{
+  .f-f-ul-li a .fa:hover{
     color: #93D500;
     transform: scale(1);
   }
 
-.m-lowerfooter{
+
+
+
+.f-lowerfooter{
   background-color: #262626;
   height: 89px;
   width: 100%;
   border-color: transparent;
 }
-.m-privacy-policy{
+.f-privacy-policy{
 
   font-weight: 700;
   font-size: 1.375rem;
@@ -457,15 +452,17 @@ footer a {
   margin-left: 3.625rem;
   border: 1px;
   margin-top: 23px;
+  background-color: #262626;
   
 }
-.m-privacy-policy a{
+.f-privacy-policy a{
   text-decoration: none;
   color: #c3ec0c;
   background-color: #262626;
+  font-size: 18px;
  
 }
-.m-lowerfooter ul li{
+.f-lowerfooter ul li{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -480,7 +477,8 @@ footer a {
 
 }
 
-.m-lf-additional-link{
+
+.f-lf-additional-link{
 
   text-decoration: none;
   color: white;
@@ -499,21 +497,26 @@ footer a {
     background-color: #ffffff00;
 }
 
-
-
-
-
-
-
-
-
 .a-roundedrec{
-    background: #04152E;
-border-radius: 14px;
-    padding: 50px; 
-    width: 510px;
-    height: 0px;  
-    transform: translate(5%, 80%);
+    
+    background: #04152e;
+    border-radius: 0px;
+    padding: 50px;
+    width: 526px;
+    height: 0px;
+    transform: translate(6%, -6%);
+
+}
+.a-roundedrec2{
+    
+    
+    background: #04152e;
+    border-radius: 0px;
+    padding: 50px;
+    width: 526px;
+    height: 0px;
+    transform: translate(-6%, -6%);
+
 }
 
 .a-curr {
@@ -570,7 +573,7 @@ border-radius: 14px;
 
 }
 #demo{
-    width: 190px;
+    width: 290px;
     height: 35px;
     margin-top: 4px;
     margin-left: 24px;
@@ -583,4 +586,10 @@ border-radius: 14px;
     flex-basis: 100px;
     
     
+}
+#demo1{
+    width: 290px;
+    height: 35px;
+    margin-top: 4px;
+    margin-left: 24px;
 }

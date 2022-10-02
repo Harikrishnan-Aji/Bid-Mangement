@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- please do not delete the below link -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/bid_v_form.css') }}">   -->
+    <title>Vendor form</title>
+    <link rel="stylesheet" href="bid_v_form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://pitstop.navigantbpm.com/wp-content/uploads/2021/07/cropped-acon-32x32.png" type="image/icon type">
+
+</head>
+<body>
+    <div class="f-main">
+        <div class="f-navbar">
+          <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/gh-logo.png?raw=true" alt="error" class="f-gh-logo">        <h1 class="f-heading">Approver Active Bids </h1>
+          <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">News & Events</a></li>
+              <li><a href="">Contact</a></li>
+              <button class="f-button">Enroll Now</button>
+          </ul>
+        </div>
+        <div class="f-body">
+                <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                            <h1 style="text-align: center;">Form successfully submitted</h1>
+                          
+                            <p>You can only fill out this form for a bid.</p>
+
+                            <button class="f-body-button"><a href="vd_dashboard.html" style="text-decoration: none;"> Check Status</a></button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h2>Registration Form</h2>
+            
+                            <table>
+                                <br>
+                                <tr style="width: 50px;">
+                                    <br>
+                        
+                                        <label for="fname"><i  style="margin-left: -293px;  "></i> Course title </label>
+                                        <input type="text" id="fname" name="firstname" placeholder ="Enter your title" style="width: 87%;">
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email"> Duration</label>
+                                        <input type="text" id="email" name="email" placeholder="Course Duration" style="width:89%;">
+                                    </td>
+                                    <td>
+                                        <label for="cname">Experience</label>
+                                        <input type="text" id="cname" name="cardname" placeholder="Enter Experience" style="width:89%;">
+                                    </td>
+                                    
+                                    
+                           
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="adr">Expected Cost</label>
+                                        <input type="text" id="adr" name="address" placeholder="Enter the Expected cost" style="width:89%;">
+                                    </td>
+                                    
+                                    <td>
+                                        <label for="cname">Demo</label>
+                                        <input type="text" id="cname" name="cardname" placeholder="Enter url" style="width:89%;"> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="city"> Skills</label>
+                                        <input type="text" id="city" name="city" placeholder="Enter the skill Details" style="width:89%;">
+                                    </td>
+                                    <td>
+                                        <label for="expmonth">Bid ID</label>
+                                        <input type="text" id="expmonth" name="expmonth" placeholder="Enter the course code" style="width:89%;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="subject">Description</label>
+                                        <textarea class = "dec" id="subject" name="subject" placeholder="Enter the Description" style="width:191%;"></textarea>
+                                      </label>
+                                    </td>
+                                </tr>
+                            </table>            
+                          
+                            <button class="f-body-button"id="Submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-right">
+                                <img src="https://www.datasciencecentral.com/wp-content/uploads/2021/10/9430449274.png" class="object-fit: cover;" alt="logo" class="m-card-logo" >  
+
+                                <div class="f-body-form-bottom1">
+                                </div>
+                                
+                
+
+                                    <div class="a-roundedrec">
+                                        <div class="a-curr">Current Bid</div>
+                                        <div class="a-amount">$210.67</div>
+                                        <div class="a-end">Ends in</div>
+                                        <!-- javascript for countdown -->
+                                        <div class="countdown">
+                                            <div class="countdown-1">
+                                                <p style="font-size: 24px;color: white;width: 227px;" id="demo"></p>
+                                                <script>
+                                                var deadline = new Date("Jan 5, 2023 15:37:25").getTime();
+                                                var x = setInterval(function() {
+                                                var now = new Date().getTime();
+                                                var t = deadline - now;
+                                                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                                                var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                                                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                                                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                                                document.getElementById("demo").innerHTML = days + "d "
+                                                + hours + "h " + minutes + "m " + seconds + "s ";
+                                                    if (t < 0) {
+                                                        clearInterval(x);
+                                                        document.getElementById("demo").innerHTML = "EXPIRED";
+                                                    }
+                                                }, 1000);
+                                                </script>
+                                
+                                            </div>
+                                            
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="overlay-panel overlay-left">
+
+                                <img src="https://www.datasciencecentral.com/wp-content/uploads/2021/10/9430449274.png" class="object-fit: cover;" alt="logo" class="m-card-logo" >  
+
+                                <div class="f-body-form-bottom1">
+                                </div>
+                                
+                
+
+                                    <div class="a-roundedrec2">
+                                        <div class="a-curr">Current Bid</div>
+                                        <div class="a-amount">$210.67</div>
+                                        <div class="a-end">Ends in</div>
+                                        <!-- javascript for countdown -->
+                                        <div class="countdown">
+                                            <div class="countdown-1">
+                                                <p style="font-size: 24px;color: white;" id="demo1"></p>
+                                                <script>
+                                                var deadline = new Date("Jan 5, 2023 15:37:25").getTime();
+                                                var x = setInterval(function() {
+                                                var now = new Date().getTime();
+                                                var t = deadline - now;
+                                                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                                                var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                                                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                                                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                                                document.getElementById("demo1").innerHTML = days + "d "
+                                                + hours + "h " + minutes + "m " + seconds + "s ";
+                                                    if (t < 0) {
+                                                        clearInterval(x);
+                                                        document.getElementById("demo1").innerHTML = "EXPIRED";
+                                                    }
+                                                }, 1000);
+                                                </script>
+                                
+                                            </div>
+                                            
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+                                <!-- <h1>Welcome Back!</h1>
+                                <p>To keep connected with us please login with your personal info</p>
+                                <button class="ghost" id="signIn">Sign In</button> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="f-footer">
+                    <img src="https://guidehouse.com/-/media/www/site/images/guidehouse/acon_whitev2.png" alt="error" class="f-f-gh-logo">
+                    <div class="f-f-bar"></div>
+                    <div class="f-f-socialmedia">
+                      <ul class="f-f-ul">
+                          <li class="f-f-ul-li "><a href="#"><i class="fa fa-linkedin" class ="m-f-ul-icons"aria-hidden="true"></i></a></li>
+                          <li class="f-f-ul-li "><a href="#"><i class="fa fa-instagram" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+                          <li class="f-f-ul-li "><a href="#"><i class="fa fa-twitter" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+                          <li class="f-f-ul-li "><a href="#"><i class="fa fa-facebook" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+                          <li class="f-f-ul-li "><a href="#"><i class="fa fa-youtube-play" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+                        </ul>
+                  </div>
+                  </div>
+                  <div class="f-lowerfooter">
+                    
+                      <ul>
+                        <li><button class="f-privacy-policy"><a href="https://guidehouse.com/privacy-policy">Privacy Policy +</a></button></li>
+                        <li><a href="https://guidehouse.com/about/legal" class="f-lf-additional-link">Legal</a></li>
+                        <li>|</li>
+                        <li><a href="https://guidehouse.com/-/media/www/site/corporate/2022/corp_modernslaverystatement-1-4-22.pdf" class="f-lf-additional-link">UK Modern Slavery Statement</a></li>
+                        <li>|</li>
+                        <li><a href="https://guidehouse.com/-/media/www/site/corporate/2022/corp_globalhumanrightspdf_br_0122_ic.pdf" class="f-lf-additional-link">Global Human Rights Statement</a></li>
+                        <li>|</li>
+                        <li><a href="https://consulting.guidehouse.com/PreferenceCenterWeb" class="f-lf-additional-link">Subscribe</a></li>
+                        <li>|</li>
+                        <li><a href="https://guidehouse.com/-/media/www/site/corporate/2020/covid-business-continuity_updated-statement_061520.pdf" class="f-lf-additional-link">Guidehouse Business Continuity Plan</a></li>
+                        <li>|</li>
+                        <li><a href="" class="f-lf-additional-link">© 2022 Guidehouse</a></li>
+            
+                      </ul>
+                   
+                  </div>
+        </div>
+
+
+        
+    </div>
+    <script>
+        
+        const signInButton = document.getElementById('signIn');
+        const signUpButton = document.getElementById('Submit');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>
