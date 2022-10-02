@@ -372,5 +372,52 @@ border-radius: 14px;
 }
 
 .a-vendoricon{
+    margin-top: -120px;
+    margin-left: -80px;
+}
+
+.a-vendor1head{
+    margin-left: 80px;
+    margin-top : -60px;
+    width: 380px;
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.a-vendoricon2{
+    margin-left: -80px;
+    margin-top: 20px;
+}
+
+.a-vendoricon3{
+    margin-left: -80px;
+    margin-top: 20px;
+}
+
+.a-vendoricon4{
+    margin-left: -80px;
+    margin-top: 20px;
+}
+
+/* social media */
+
+.a-socialmedia{
+    display: flex;
+    background: #ffffff;
+    padding: 130x; 
+    width: 610px;
+    height: 160px;  
+    transform: translate(5%, -300%);
+    filter: drop-shadow(10px 2px 9px #c8c6c6);
+}
+
+.a-socialhead{
+    transform: translate(5%, -300%);
+    
+    font-family:'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 70px;
     
 }
