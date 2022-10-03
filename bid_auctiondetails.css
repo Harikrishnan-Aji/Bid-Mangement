@@ -382,7 +382,7 @@ border-radius: 14px;
     width: 380px;
     font-family:'Poppins', sans-serif;
     font-style: normal;
-    font-weight: bolder;
+    font-weight: boldh;
     font-size: 25px;
 }
 
@@ -418,15 +418,33 @@ border-radius: 14px;
     font-family:'Poppins', sans-serif;
     font-weight: bolder;
     font-size: 30px;
-    margin-left: 200px;
+    margin-left: 240px;
     margin-top: 10px;
    
 }
 
 .facebook{
-    height: 70px;
-    margin-left: -290px;
-    margin-top: 50px;
+    height: 80px;
+    margin-left: -300px;
+    margin-top: 57px;
+}
+
+.instagram{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 57px;
+}
+
+.twitter{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 57px;
+}
+
+.whatsapp{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 57px;
 }
 
 
