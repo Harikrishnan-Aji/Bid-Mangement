@@ -413,13 +413,14 @@ border-radius: 14px;
     filter: drop-shadow(10px 2px 9px #c8c6c6);
 }
 
-.a-socialhead{
-    transform: translate(5%, -300%);
-    
+.socialhead{
+    /* transform: translate(5%, -300%); */
     font-family:'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 70px;
-    
+    font-size: 30px;
+    margin-left: 200px;
+    margin-top: 10px;
+   
 }
 
 
