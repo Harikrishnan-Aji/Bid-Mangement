@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
     <link rel="stylesheet" href="vd_style.css">
     <!-- please do not delete the below link -->
-    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/vd_style.css') }}">   -->
+    <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/vd_style.css') }}"> -->
     <link rel="stylesheet" href="vd_style.css">
 </head>
 <body>
-    
     <input type="checkbox" id="sidebar-toggle">
     <div class="sidebar">
         <div class="sidebar-header">
@@ -20,7 +20,7 @@
                 <span>L&D Portal</span>
             </h3> 
            
-            <label for="sidebar-toggle" class="ti-menu-alt" ></label>
+            <label for="sidebar-toggle" class="fa fa-bars" ></label>
         </div>
         
         <div class="sidebar-menu">
@@ -28,7 +28,9 @@
             <ul>
                 <li>
                     <a href="">
-                        <span class="ti-home"></span>
+                        <span class="fa fa-home" style="scale: 1.4;">
+                            
+                        </span>
                         <span>Home</span>
                     </a>
                 </li>
@@ -36,7 +38,7 @@
             <div class = "sidebar-a" >
                 <li>
                     <a href="">
-                        <span class="ti-face-smile"></span>
+                        <span class="fa fa-book"style="scale: 1.4;"></span>
                         <span>Course</span>
                     </a>
                 </li>
@@ -44,7 +46,7 @@
             <div class = "sidebar-a">
                 <li>
                     <a href="">
-                        <span class="ti-agenda"></span>
+                        <span class="fa fa-info-circle"style="scale: 1.4;"></span>
                         <span>About</span>
                     </a>
                 </li>         
@@ -53,8 +55,6 @@
             </ul>
         </div>
     </div>
-    
-    
     <div class="vd-main">
         <div class="vd-navbar">
         
@@ -76,8 +76,9 @@
         <section class="recent">
                 <div class="activity-grid">
                     <div class="activity-card">
-                        <h3>Recent activity</h3>
-                        
+                        <h3 class="activity-card-heading">Recent activity</h3>
+                        <br>
+                        <br>
                         <div class="table-responsive">
                             <table>
                                 <thead>
@@ -126,8 +127,7 @@
                                         <td>
                                             <span class="badge warning">Processing</span>
                                         </td>
-                                    </tr>   
-                                   
+                                    </tr>
                                     <tr>
                                         <td>357893</td>
                                         <td>DevOps on AWS</td>
@@ -136,18 +136,13 @@
                                         <td>
                                             <span class="badge success">Success</span>
                                         </td>
-                                    </tr>
-                                        
-                                    
+                                    </tr> 
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    
-                    
                 </div>
             </section>
-            
         </main>
         <div class="m-b-lower">
         </div>
