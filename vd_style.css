@@ -46,18 +46,22 @@
     padding: 0rem;
 }
 .sidebar-a:hover{
-    background-color: #949292;
+    background-color: #94929200;
     height: 50px;
     width: 240px;
 }
 .sidebar li {
     margin-bottom: 1.5rem;
 }
-
+.sidebar li:hover {
+    background-color: #94929240;
+}
 
 .sidebar a {
     color: rgb(10, 10, 10);
     font-size: .8rem;
+    padding-left: 10px;
+    text-align: center;
 }
 
 
@@ -193,17 +197,12 @@
     height: 38px;
 }
 
-
-
-
 main {
     margin-top: 0px;
     background: #f1f5f9;
     min-height: 90vh;
     padding: 2rem 20rem;
 }
-
-
 
 th, td {
     font-size: .9rem;
@@ -219,13 +218,10 @@ tbody tr:nth-child(even) {
     background: #f9fafc;
 }
 
-
-
 .td-team {
     display: flex;
     align-items: center;
 }
-
 
 .summary-single {
     padding: .5rem 1rem;
@@ -250,7 +246,6 @@ tbody tr:nth-child(even) {
     color: var(--text-grey);
 }
 
-
 .text-center {
     text-align: center;
 }
@@ -264,7 +259,7 @@ tbody tr:nth-child(even) {
 }
 
 .table-responsive {
-    overflow-x: auto;
+    scale: 1.3;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -535,4 +530,7 @@ tbody tr:nth-child(even) {
     font-size:24px;
     color: #262626;
     transition: .5s;
+  }
+  .activity-card-heading{
+    padding-left: 10px;
   }

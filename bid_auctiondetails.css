@@ -382,7 +382,7 @@ border-radius: 14px;
     width: 380px;
     font-family:'Poppins', sans-serif;
     font-style: normal;
-    font-weight: bolder;
+    font-weight: boldh;
     font-size: 25px;
 }
 
@@ -413,13 +413,38 @@ border-radius: 14px;
     filter: drop-shadow(10px 2px 9px #c8c6c6);
 }
 
-.a-socialhead{
-    transform: translate(5%, -300%);
-    
+.socialhead{
+    /* transform: translate(5%, -300%); */
     font-family:'Poppins', sans-serif;
     font-weight: bolder;
-    font-size: 70px;
-    
+    font-size: 30px;
+    margin-left: 240px;
+    margin-top: 10px;
+   
+}
+
+.facebook{
+    height: 80px;
+    margin-left: -300px;
+    margin-top: 57px;
+}
+
+.instagram{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 57px;
+}
+
+.twitter{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 57px;
+}
+
+.whatsapp{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 57px;
 }
 
 
