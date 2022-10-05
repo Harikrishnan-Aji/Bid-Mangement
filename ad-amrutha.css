@@ -370,7 +370,7 @@ p {
   box-shadow: 0 10px 15px rgba(0,0,0,0.3);
   background-color: transparent;
   transition: .5s;
-  color: rgb(15, 13, 13);
+  color: rgb(242, 237, 237);
 }
 
 .ad-f-ul-li a:hover {
@@ -386,7 +386,7 @@ p {
   border-radius: 50%;
   line-height: calc(60px - 12px);
   font-size:24px;
-  color: #080606;
+  color: #f7f4f4;
 
 
 }
@@ -413,19 +413,21 @@ p {
   margin-left: 3.625rem;
   border: 1px;
   margin-top: 23px;
+  background-color: #262626;
   
 }
 .ad-privacy-policy a{
   text-decoration: none;
   color: #c3ec0c;
   background-color: #262626;
+  font-size: 18px;
  
 }
 .ad-lowerfooter ul li{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: rgb(237, 224, 224);
   list-style: none;
   display: inline-block;
   margin: 0 20px;
@@ -445,5 +447,16 @@ p {
   color: white;
   
 }
-  
+.ad-body-form-bottom1{
+  width: 100%;
+  height: 50%;
+  scale: 1.5;
+
+}
+.ad-body-form-bottom2{
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff00;
+}
+
  
