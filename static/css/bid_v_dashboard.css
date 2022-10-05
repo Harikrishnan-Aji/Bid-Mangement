@@ -447,98 +447,166 @@ a[href*="#followme"]::before {
     background-color: rgba(250,250,250,.8);
     z-index: 1;
 }
-.ad-footer{
+
+
+
+
+
+
+/* -----------------------------------footer -----------------------------------------------------*/
+
+
+
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
+}
+
+.f-body-row1{
+  width: 50%;
+}
+.f-form-title{
+
+  outline-color: #eee;
+}
+.f-form-title:hover{
+  background-color: rgba(216, 216, 216, 0.829);
+
+}
+.f-form-contents{
+  outline-color: #eee;
+}
+.f-form-contents:hover{
+  background-color: rgba(216, 216, 216, 0.829);
+}
+.f-form-course-title{
+  margin-left: 2px;
+  width: 91%;
+  
+}
+.dec{
+  width: 192%;
+  height: 100px;
+  background-color: #eee;
+  border-color: #eee;    
+  outline-color: #eee;
+
+}
+
+.dec:hover{
+  background-color: rgba(216, 216, 216, 0.829);
+}
+
+
+.f-footer{
   width: 100%;
   height: 150px;
   background-color: black;
+  margin-top: 10px;
+  
 }
-.ad-f-gh-logo{
+
+.f-f-gh-logo{
   padding-left: 20px;
   padding-top: 20px;
   width: 130px;
 }
-/* .m-f-bar{
-  width: 130px;
-  height: 1px;
-  border: 7px solid #000000;
-  box-shadow: inset 0px 4px 4px rgb(213 213 213 / 19%);
-  position:absolute;
-  left: 32px;
-} */
 
 
-
-.ad-f-socialmedia{
-scale: 0.5;
-margin-top: -59px;
-margin-left: 10px;
-margin-left: -149px;
-color: rgb(0, 0, 0);
+.f-f-socialmedia{
+  scale: 0.5;
+  margin-top: -59px;
+  margin-left: 10px;
+  margin-left: -149px;
+  color: rgb(0, 0, 0);
 }
 
 
-.ad-f-ul {
-
-transform: translate(-50%, -50%);
-margin-left: 1548px;
-display:flex;
+.f-f-ul {
+ 
+  transform: translate(-50%, -50%);
+  margin-left: 1548px;
+  display:flex;
 
 }
 
-.ad-f-ul-li {
-list-style: none;
-scale: 2;
+.f-f-ul-li {
+  list-style: none;
+  scale: 2;
 }
 
-.ad-f-ul-li a {
-position: relative;
-width:60px;
-height:60px;
-display:block;
-text-align:center;
-margin:0 20px;
-border-radius: 50%;
-padding: 6px;
-box-sizing: border-box;
-text-decoration:none;
-box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-background-color: transparent;
-transition: .5s;
-color: rgb(242, 237, 237);
+.f-f-ul-li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 20px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background-color: transparent;
+  transition: .5s;
+  color: white;
 }
 
-.ad-f-ul-li a:hover {
-box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-text-decoration:none;
+.f-f-ul-li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
 }
 
-.ad-f-ul-li a .fa {
-width: 100%;
-height:100%;
-display:block;
-background: transparent;
-border-radius: 50%;
-line-height: calc(60px - 12px);
-font-size:24px;
-color: #f7f4f4;
+.f-f-ul-li a .fa {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: transparent;
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #ffffff;
 
 
 }
 
-.ad-f-ul-li a .fa:hover{
-color: #93D500;
-transform: scale(1);
+.f-f-ul-li a .fa:hover{
+  color: #93D500;
+  transform: scale(1);
 }
 
 
 
-.ad-lowerfooter{
+
+.f-lowerfooter{
 background-color: #262626;
 height: 89px;
 width: 100%;
 border-color: transparent;
 }
-.ad-privacy-policy{
+.f-privacy-policy{
 
 font-weight: 700;
 font-size: 1.375rem;
@@ -550,18 +618,18 @@ margin-top: 23px;
 background-color: #262626;
 
 }
-.ad-privacy-policy a{
+.f-privacy-policy a{
 text-decoration: none;
 color: #c3ec0c;
 background-color: #262626;
 font-size: 18px;
 
 }
-.ad-lowerfooter ul li{
+.f-lowerfooter ul li{
 display: flex;
 align-items: center;
 justify-content: space-between;
-color: rgb(237, 224, 224);
+color: white;
 list-style: none;
 display: inline-block;
 margin: 0 20px;
@@ -570,4 +638,24 @@ text-shadow: 0px 2px 2px rgba(49, 49, 49, 0.25);
 font-size: 13px;
 margin: 5px 6px;
 
+}
+
+
+.f-lf-additional-link{
+
+text-decoration: none;
+color: white;
+
+}
+
+.f-body-form-bottom1{
+  width: 100%;
+  height: 50%;
+  scale: 1.5;
+
+}
+.f-body-form-bottom2{
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff00;
 }

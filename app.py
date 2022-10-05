@@ -15,11 +15,11 @@ def auction():
 
 @app.route('/vendor-registration-form')
 def form():
-    return  render_template('bid_vendorform.html')
+    return  render_template('bid_v_form.html')
 
 @app.route('/vendor-dashboard')
 def vdash():
-    return render_template('vd_dashbord.html')   
+    return render_template('bid_v_dashboard.html')   
      
 @app.route('/approver-active-bid')
 def activebid():
@@ -27,7 +27,7 @@ def activebid():
 
 @app.route('/approver-dashboard')
 def adash():
-    return render_template('bid_appdashboard.html')    
+    return render_template('bid_approver_dashboard.html')    
 @app.route("/confirm", methods=['POST', 'GET'])
 def suggestions():
     if request.method == 'POST':
