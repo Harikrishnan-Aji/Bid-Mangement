@@ -344,17 +344,37 @@ footer a {
 .f-body-row1{
     width: 50%;
 }
+.f-form-title{
+  
+    outline-color: #eee;
+}
+.f-form-title:hover{
+    background-color: rgba(216, 216, 216, 0.829);
 
+}
+.f-form-contents{
+    outline-color: #eee;
+}
+.f-form-contents:hover{
+    background-color: rgba(216, 216, 216, 0.829);
+}
 .f-form-course-title{
     margin-left: 2px;
     width: 91%;
+    
 }
 .dec{
     width: 192%;
     height: 100px;
+    background-color: #eee;
+    border-color: #eee;    
+    outline-color: #eee;
+
 }
 
-
+.dec:hover{
+    background-color: rgba(216, 216, 216, 0.829);
+}
 
 
 .f-footer{
