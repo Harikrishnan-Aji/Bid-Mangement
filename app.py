@@ -1,27 +1,31 @@
+
 from flask import Flask, render_template, request,redirect,url_for
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
+    
     return render_template('bid_main.html')
+
 
 @app.route('/auction-details')
 def auction():
     return render_template('bid_auctiondetails.html')
 
-@app.route("/vendor-registration-form")
+@app.route('/vendor-registration-form')
 def form():
     return  render_template('bid_vendorform.html')
 
-@app.route("/vendor-dashboard")
+@app.route('/vendor-dashboard')
 def vdash():
-    return render_template('vd_dashbord.html')    
-@app.route("/approver-active-bid")
+    return render_template('vd_dashbord.html')   
+     
+@app.route('/approver-active-bid')
 def activebid():
     return  render_template('bid_approver_activeBid.html')
 
-@app.route("/approver-dashboard")
+@app.route('/approver-dashboard')
 def adash():
     return render_template('bid_appdashboard.html')    
 @app.route("/confirm", methods=['POST', 'GET'])
