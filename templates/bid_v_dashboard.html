@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="icon" href="https://pitstop.navigantbpm.com/wp-content/uploads/2021/07/cropped-acon-32x32.png" type="image/icon type">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bid_v_dashboard.css') }}">  
+    <link rel="stylesheet" href="bid_v_dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webkit.js/0.1.0/webkit.js" integrity="sha512-4radB7wSGlmlQJiqgJadNNYINr9oy4iIfeTlv0a7x/AmtOqwNqtndOSusv70X0GmRstJKuNFNQ1w3T27Nq9A5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="vd-main">
+        <div class="vd-navbar">
+            <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/gh-logo.png?raw=true" alt="error" class="vd-gh-logo">
+            <h1 class="vd-heading">Vendor Dashboard</h1>
+            <ul style="margin-top: 13px;margin-bottom: 1rem;">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">News & Events</a></li>
+                <li><a href="">Contact</a></li>
+                <button class="vd-button">Place Bid</button>
+            </ul>
+            
+          </div>
+          <div>
+          <div>
+          <div id="wrapper">
+            <div class="overlay"></div>
+             
+                 <!-- Sidebar -->
+             <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+              <ul class="nav sidebar-nav">
+                <div class="sidebar-header">
+                <div class="sidebar-brand">
+                  <a href="#">Bid Management</a></div></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Course</a></li>
+                <li><a href="#events">About</a></li>
+                
+               </ul>
+           </nav>
+                 <div id="page-content-wrapper">
+                     <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas" style="top: 15px;">
+                         <span class="hamb-top"></span>
+                   <span class="hamb-middle"></span>
+                 <span class="hamb-bottom"></span>
+                     </button>
+                     
+                 </div>
+         
+                </div> </div>
+
+
+
+
+              <div class="container py-5">
+  <header class="text-center text-white">
+    <h1 class="display-4">Bootstrap Datatables</h1>
+    <p class="lead mb-0">Using Bootstrap 4 and <a href="https://datatables.net/examples/styling/bootstrap4.html" class="text-white font-italic">
+        <u>Datatables</u></a>, add interaction controlsto your HTML tables.</p>
+    <p class="font-italic">Snippet By
+      <a href="https://bootstrapious.com" class="text-white">
+        <u>Bootstrapious</u>
+      </a>
+    </p>
+  </header>
+  <div class="row py-5">
+    <div class="col-lg-10 mx-auto">
+      <div class="card rounded shadow border-0">
+        <div class="card-body p-5 bg-white rounded " style="margin-top: -240px;margin-top: -236px;
+        scale: 1.2;">
+          <div class="table-responsive">
+            <table id="example" style="width:100%" class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Cost</th>
+                  <th>Duration</th>
+                  <th>Status</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Google UX Design</td>
+                  <td>$150</td>
+                  <td>40hrs</td>
+                  <td class="table-success">Accepted</td>
+                                 </tr>
+                <tr>
+                  <td>Digital Product Management</td>
+                  <td>$200</td>
+                  <td>20hrs</td>
+                  <td class="table-danger">Rejected</td>
+                  
+                </tr>
+                <tr>
+                  <td>Introduction to Programming with Java</td>
+                  <td>$150</td>
+                  <td>30hrs</td>
+                  <td class="table-warning">Pending</td>
+                  
+                </tr>
+                <tr>
+                  <td>Scrum Master Certification</td>
+                  <td>$250</td>
+                  <td>30hrs</td>
+                  <td class="table-warning">Pending</td>
+                  
+                </tr>
+                <tr>
+                  <td>DeVops on AWS</td>
+                  <td>$300</td>
+                  <td>40hrs</td>
+                  <td class="table-danger">Rejected</td>
+                  
+                </tr>
+                <tr>
+                  <td>Python for Everybody Specilization</td>
+                  <td>$200</td>
+                  <td>40hrs</td>
+                  <td class="table-success">Accepted</td>
+                  
+                </tr>
+                
+                <tr>
+                  <td>Meta iOS Developer</td>
+                  <td>$100</td>
+                  <td>30hrs</td>
+                  <td class="table-warning">Pending</td>
+                  
+                </tr>
+                <tr>
+                  <td>Algorithm Specilization</td>
+                  <td>$200</td>
+                  <td>20hrs</td>
+                  <td class="table-danger">Rejected</td>
+                  
+                </tr>
+                <tr>
+                  <td>DeVop,Cloud and Agile Foundation</td>
+                  <td>$150</td>
+                  <td>30hrs</td>
+                  <td class="table-success">Accepted</td>
+                  
+                </tr>
+                <tr>
+                  <td>Machine Learning</td>
+                  <td>$250</td>
+                  <td>40hrs</td>
+                  <td class="table-warning">Pending</td>
+                 
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="f-footer">
+    <img src="https://guidehouse.com/-/media/www/site/images/guidehouse/acon_whitev2.png" alt="error" class="f-f-gh-logo">
+    <div class="f-f-bar"></div>
+    <div class="f-f-socialmedia">
+      <ul class="f-f-ul">
+          <li class="f-f-ul-li "><a href="#"><i class="fa fa-linkedin" class ="m-f-ul-icons"aria-hidden="true"></i></a></li>
+          <li class="f-f-ul-li "><a href="#"><i class="fa fa-instagram" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+          <li class="f-f-ul-li "><a href="#"><i class="fa fa-twitter" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+          <li class="f-f-ul-li "><a href="#"><i class="fa fa-facebook" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+          <li class="f-f-ul-li "><a href="#"><i class="fa fa-youtube-play" class ="m-f-ul-icons" aria-hidden="true"></i></a></li>
+        </ul>
+  </div>
+ 
+  <div class="f-lowerfooter">
+    
+      <ul>
+        <li><button class="f-privacy-policy"><a href="https://guidehouse.com/privacy-policy">Privacy Policy +</a></button></li>
+        <li><a href="https://guidehouse.com/about/legal" class="f-lf-additional-link">Legal</a></li>
+        <li>|</li>
+        <li><a href="https://guidehouse.com/-/media/www/site/corporate/2022/corp_modernslaverystatement-1-4-22.pdf" class="f-lf-additional-link">UK Modern Slavery Statement</a></li>
+        <li>|</li>
+        <li><a href="https://guidehouse.com/-/media/www/site/corporate/2022/corp_globalhumanrightspdf_br_0122_ic.pdf" class="f-lf-additional-link">Global Human Rights Statement</a></li>
+        <li>|</li>
+        <li><a href="https://consulting.guidehouse.com/PreferenceCenterWeb" class="f-lf-additional-link">Subscribe</a></li>
+        <li>|</li>
+        <li><a href="https://guidehouse.com/-/media/www/site/corporate/2020/covid-business-continuity_updated-statement_061520.pdf" class="f-lf-additional-link">Guidehouse Business Continuity Plan</a></li>
+        <li>|</li>
+        <li><a href="" class="f-lf-additional-link">© 2022 Guidehouse</a></li>
+
+      </ul>
+   
+  </div>
+</div>
+
+
+
+
+       
+                
+          </div>
+
+    </div>
+    <script>$(function() {
+      $(document).ready(function() {
+        $('#example').DataTable();
+      });
+    });
+    </script>
+    <script>
+      $(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+    </script>
+</body>
+</html>
