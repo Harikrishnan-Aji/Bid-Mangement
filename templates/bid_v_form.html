@@ -36,7 +36,7 @@
                         </form>
                     </div>
                     <div class="form-container sign-in-container">
-                        <form action="#">
+                        <form action="#" method="POST">
                             <br>
                             <h2>Registration Form</h2>
             
@@ -44,65 +44,57 @@
                                 
                                 <tr style="width: 50px;">
                                     <br>
-                        
+                                    {% for form in forms %}
                                         <label for="fname"><i  style="margin-left: -293px;  "></i> Course title </label>
-                                        <input type="text" id="fname" name="firstname" placeholder ="Enter your title" class="f-form-title" style="width: 87%;outline-color: #eee;">
-                                </tr>
+                                        <input type="text" id="fname" name="firstname" value="{{ form.c_title }}" class="f-form-title" style="width: 87%;outline-color: #eee;" disabled="disabled">
+                                        {% endfor %}     
+                                    </tr>
                                 <tr>
                                     <td>
-                                        <label for="city"> Vendor Id</label>
-                                        <input type="text" id="city" name="city" placeholder="Enter the Vendor id" style="width:89%;"class="f-form-contents">
+                                        <label for="Vendor_ID"> Vendor Id</label>
+                                        <input type="text" id="Vendor_ID" name="Vendor_ID" placeholder="Enter the Vendor id" style="width:89%;"class="f-form-contents">
                                     </td>
                                     <td>
-                                        <label for="expmonth">Vendor Name</label>
-                                        <input type="text" id="expmonth" name="expmonth" placeholder="Enter the Vendor name" style="width:89%;"class="f-form-contents">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="email"> Duration</label>
-                                        <input type="text" id="email" name="email" placeholder="Course Duration" style="width:89%;" class="f-form-contents">
-                                    </td>
-                                    <td>
-                                        <label for="cname">Experience</label>
-                                        <input type="text" id="cname" name="cardname" placeholder="Enter Experience" style="width:89%;"class="f-form-contents">
+                                        <label for="Vendor_Name">Vendor Name</label>
+                                        <input type="text" id="Vendor_Name" name="Vendor_Name" placeholder="Enter the Vendor name" style="width:89%;"class="f-form-contents">
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="adr">Expected Cost</label>
-                                        <input type="text" id="adr" name="address" placeholder="Enter the Expected cost" style="width:89%;"class="f-form-contents">
+                                        <label for="Duration"> Duration</label>
+                                        <input type="text" id="Duration" name="Duration" placeholder="Course Duration" style="width:89%;" class="f-form-contents">
+                                    </td>
+                                    <td>
+                                        <label for="Experience">Experience</label>
+                                        <input type="text" id="Experience" name="Experience" placeholder="Enter Experience" style="width:89%;"class="f-form-contents">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="Expected_Cost">Expected Cost</label>
+                                        <input type="text" id="Expected_Cost" name="Expected_Cost" placeholder="Enter the Expected cost" style="width:89%;"class="f-form-contents">
                                     </td>
                                     
                                     <td>
-                                        <label for="cname">Demo</label>
-                                        <input type="text" id="cname" name="cardname" placeholder="Enter url" style="width:89%;"class="f-form-contents"> 
+                                        <label for="Demo">Demo</label>
+                                        <input type="text" id="Demo" name="Demo" placeholder="Enter url" style="width:89%;"class="f-form-contents"> 
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="city"> Skills</label>
-                                        <input type="text" id="city" name="city" placeholder="Enter the skill Details" style="width:89%;"class="f-form-contents">
+                                        <label for="Skills"> Skills</label>
+                                        <input type="text" id="Skills" name="Skills" placeholder="Enter the skill Details" style="width:89%;"class="f-form-contents">
                                     </td>
                                     <td>
                                         <label for="expmonth">Bid ID</label>
-                                        <input type="text" id="expmonth" name="expmonth" placeholder="Enter the course code" style="width:89%;"class="f-form-contents">
+                                        <input type="text" id="expmonth" name="expmonth" placeholder="Generates automatically" style="width:89%;"class="f-form-contents" disabled="disabled">
                                     </td>
                                 </tr>
+                                
                                 <tr>
                                     <td>
-                                        <label for="city"> Vendor Id</label>
-                                        <input type="text" id="city" name="city" placeholder="Enter the Vendor id" style="width:89%;"class="f-form-contents">
-                                    </td>
-                                    <td>
-                                        <label for="expmonth">Vendor Name</label>
-                                        <input type="text" id="expmonth" name="expmonth" placeholder="Enter the Vendor name" style="width:89%;"class="f-form-contents">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="subject">Description</label>
-                                        <textarea class = "dec" id="subject" name="subject" placeholder="Enter the Description" style="width:191%;"></textarea>
+                                        <label for="Description">Description</label>
+                                        <textarea class = "dec" id="Description" name="Description" placeholder="Enter the Description" style="width:191%;"></textarea>
                                       </label>
                                     </td>
                                 </tr>
@@ -114,7 +106,10 @@
                     <div class="overlay-container">
                         <div class="overlay">
                             <div class="overlay-panel overlay-right">
-                                <img src="https://www.datasciencecentral.com/wp-content/uploads/2021/10/9430449274.png" class="object-fit: cover;" alt="logo" class="m-card-logo" >  
+                                {% for form in forms %}
+                                <img src="{{ form.image_url }}" class="object-fit: fill;" alt="logo" class="m-card-logo"> 
+                                {% endfor %}
+                                
 
                                 <div class="f-body-form-bottom1">
                                 </div>
@@ -168,8 +163,9 @@
                                 </div>
                             </div>
                             <div class="overlay-panel overlay-left">
-
-                                <img src="https://www.datasciencecentral.com/wp-content/uploads/2021/10/9430449274.png" class="object-fit: cover;" alt="logo" class="m-card-logo" >  
+                                {% for form in forms %}
+                                <img src="{{ form.image_url }}" class="object-fit: fill;" class="object-fit: cover;" alt="logo" class="m-card-logo"> 
+                                {% endfor %}
 
                                 <div class="f-body-form-bottom1">
                                 </div>

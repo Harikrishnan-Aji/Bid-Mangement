@@ -154,8 +154,11 @@
 <div class="a-placebid1">
     <p class="bidnow1">BID NOW<br>Bid Amount : Maximum Bid 500$</p>
     
-    <button class="button rounded-corners"> Place Bid Now</button>
-    
+    {% for auction in auctions %}
+   
+    <button class="button rounded-corners"><a href="http://127.0.0.1:5000/auction-details/vendor-registration-form/{{ auction.course_id }}" style="text-decoration: none;">Place Bid Now</a></button>
+
+    {% endfor %}
 </div>
 
 <!-- Vendor history -->

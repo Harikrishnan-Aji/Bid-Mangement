@@ -30,21 +30,47 @@ def auction(course_id):
     
 
 @app.route('/auction-details/vendor-registration-form/<int:course_id>',methods=['POST', 'GET'])
-def form(empid):
+def form(course_id):
   forms = []
   conn = connection()
   cursor = conn.cursor()
   if request.method == 'GET':
-    cursor.execute("select * from tbl_course where Course_id=?",empid)
+    cursor.execute("select * from course where Course_id=?",course_id)
     for row in cursor.fetchall():
         forms.append({"course_id": row[0], "c_title": row[1], "c_description": row[2], "image_url": row[3]})
     conn.close()
-  return render_template('bid_v_form.html',forms = forms)
-
+    return render_template('bid_v_form.html',forms = forms)
+  if request.method == 'POST':
+        Vendor_ID = request.form["Vendor_ID"]
+        Vendor_Name = request.form["Vendor_Name"]
+        Duration = int(request.form["Duration"])
+        Experience = int(request.form["Experience"])
+        Expected_Cost = float(request.form["Expected_Cost"])
+        Demo = request.form["Demo"]
+        Skills = request.form["Skills"]
+        BID_ID = int(request.form["BID_ID"])
+        Description = request.form["Description"]
+        conn = connection()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO dbo.vendor (Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description) VALUES (?, ?, ?, ?, ?, ?,? ,?,?)", Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description)
+        conn.commit()
+        conn.close()
+        return render_template('bid_v_form.html',forms = forms)
 
 @app.route('/vendor-dashboard')
 def vdash():
-    return render_template('bid_v_dashboard.html')   
+    vendors = []
+    conn = connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT title,expectedCost,duration FROM dbo.vendor")
+    for row in cursor.fetchall():
+        vendors.append({"title": row[0], "expectedCost": row[1],"duration": row[2]})        
+        # vendors.append({"title": row[0], "duration": row[1], "experience": row[2], "expectedCost": row[3],"demo": row[4], "skills": row[5], "bidno": row[6], "description": row[7]})
+    conn.close()
+    # return render_template("bid_v_dashboard.html", vendors = vendors)
+    return redirect('/')
+
+  
      
 @app.route('/approver-active-bid')
 def activebid():
