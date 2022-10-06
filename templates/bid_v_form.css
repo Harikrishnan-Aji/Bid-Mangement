@@ -189,7 +189,7 @@ input {
 	overflow: hidden;
 	width: 100%;
 	max-width: 100%;
-    min-height: 580px;
+    min-height: 680px
 }
 
 .form-container {
@@ -524,7 +524,7 @@ footer a {
     padding: 50px;
     width: 526px;
     height: 0px;
-    transform: translate(6%, -6%);
+    transform: translate(6%, -82%)
 
 }
 .a-roundedrec2{
@@ -535,7 +535,7 @@ footer a {
     padding: 50px;
     width: 526px;
     height: 0px;
-    transform: translate(-6%, -6%);
+    transform: translate(-6%, -82%)
 
 }
 

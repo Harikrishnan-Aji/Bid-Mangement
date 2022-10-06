@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 def connection():
     s = 'NITRVSP158LT' #Your server name
-    d = 'CarSales'
+    d = 'bidDB'
     u = 'REVENUEMED\haji001' #Your login
     p = 'Guide@297105' #Your login password
     cstr = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+s+';DATABASE='+d+';trusted_connection=yes;UID='+u+';PWD='+ p
@@ -16,30 +16,30 @@ def home():
     return render_template('bid_main.html')
 
 
-@app.route('/auction-details/<int:course_id>')
+@app.route('/auction-details/<int:course_id>',methods=['POST', 'GET'])
 def auction(course_id):
-    cars = []
+    auctions = []
     conn = connection()
     cursor = conn.cursor()
     if request.method == 'GET':
         cursor.execute("select * from course where course_id=?",course_id)
         for row in cursor.fetchall():
-            cars.append({"course_id": row[0], "title": row[1], "description": row[2], "image_url": row[3]})
+            auctions.append({"course_id": row[0], "c_title": row[1], "c_description": row[2], "image_url": row[3]})
         conn.close()
-    return render_template('bid_auctiondetails.html',cars = cars )
+    return render_template('bid_auctiondetails.html',auctions = auctions )
     
 
-@app.route('/auction-details/vendor-registration-form/<int:empid>',methods=['POST', 'GET'])
+@app.route('/auction-details/vendor-registration-form/<int:course_id>',methods=['POST', 'GET'])
 def form(empid):
-  cr = []
+  forms = []
   conn = connection()
   cursor = conn.cursor()
   if request.method == 'GET':
     cursor.execute("select * from tbl_course where Course_id=?",empid)
     for row in cursor.fetchall():
-        cr.append({"courseid": row[0], "coursename": row[1], "courseduration": row[2], "coursecontent": row[3],"coursetutor": row[4],"coursedes": row[5],"coursereq": row[6]})
+        forms.append({"course_id": row[0], "c_title": row[1], "c_description": row[2], "image_url": row[3]})
     conn.close()
-  return render_template('bid_v_form.html',car = cr[0])
+  return render_template('bid_v_form.html',forms = forms)
 
 
 @app.route('/vendor-dashboard')

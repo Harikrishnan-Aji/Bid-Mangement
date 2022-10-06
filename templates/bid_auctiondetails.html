@@ -38,17 +38,21 @@
     <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/au_image/ion_home-outline.png?raw=true" alt="Home" class="a-Home-icon">
     <div class="a-page">Home / Auction Details</div>
 
-    <div class="content" style="display:flex;">
-    <div class="a-container">
-        <img src="https://github.com/Harikrishnan-Aji/Bid-Mangement/blob/master/au_image/rxezjyf4ojx41%201.png?raw=true" alt="python" class="a-pythonimage"> 
+    <div class="content" style="display:flex;max-height:100%; max-width:100%;object-fit: contain;">
+        <div class="a-container" style="width: 50%;">
+        {% for auction in auctions %}
+        <img src="{{ auction.image_url }}" alt="python" class="a-pythonimage"> 
+        {% endfor %}
         
     </div> 
       
-    <div class="a-container1" >
+    <div class="a-container1"  style="width: 50%;">
         <br><br>
-        <p class="a-heading1">Advanced Python</p><br>
-        <p class="a-details"> This Python training course leads students from the basics<br> <span style="letter-spacing: 0.8px;"> writing and running Python scripts to more advanced</span><br> features such as file operations,regular expressions, working <br>with binary data, and using the extensive functionality of<br> Python modules. Extra emphasis is placed on features unique<br> to Python, such as tuples, array slices, and output formatting.</p>
-           </div>
+        {% for auction in auctions %}
+        <p class="a-heading1">{{ auction.c_title }}</p><br>
+        <p class="a-details">{{ auction.c_description }}</p>
+        {% endfor %}       
+    </div>
         </div>
     
     <!-- timer -->
