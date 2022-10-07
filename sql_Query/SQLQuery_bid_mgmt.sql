@@ -1,8 +1,11 @@
-create table vendor(Title varchar(255),Vendor_ID int primary key,Vendor_Name varchar(50),Duration int,Experience int,Expected_Cost int,Demo varchar(max),Skills varchar(50),Description varchar(max));
+create table vendor(V_title varchar(255),Vendor_ID int primary key,Vendor_Name varchar(50),Duration int,Experience int,Expected_Cost int,Demo varchar(max),Skills varchar(50),BID_ID int IDENTITY(1,1),Description varchar(max));
+--(Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description)
 
+insert into vendor values ('Javascript',123,'udemy',20,3,230,'https://youtu.be/jER39H7j9mc','full stack developer','JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites, including this one.You will learn programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax. The concepts covered in these lessons lay the foundation for using JavaScript in any environment.')
+insert into vendor values ('Python',234,'demo',20,3,230,'https://youtu.be/jER39H7j9mc','full stack developer','JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites, including this one.You will learn programming fundamentals and basic object-oriented concepts using the latest JavaScript syntax. The concepts covered in these lessons lay the foundation for using JavaScript in any environment.')
 
 --create table approver(Title varchar(255),Vendor_ID int primary key,Vendor_Name varchar(50),Duration int,Experience int,Expected_Cost int,Demo varchar(max),Skills varchar(50),Description varchar(max),);
-
+drop table vendor
 
 create table course(course_id int primary key,c_title varchar(255),c_description varchar(max),image_url varchar(max));
 insert into course values(1,'Advanced Python','This Python training course leads students from the basics writing and running Python scripts to more advanced features such as file operations,regular expressions, working with binary data, and using the extensive functionality of Python modules. Extra emphasis is placed on features unique to Python, such as tuples, array slices, and output formatting.','https://cdn.devdojo.com/posts/images/March2021/python-app-development-what-can-you-build-with-python.jpg?auto=format&q=70&w=1280')
@@ -14,7 +17,7 @@ insert into course values(6,'HTML & CSS','HTML & CSS makes it easier for you to 
 
 select * from course
 
-
+select * from vendor
 
 
 

@@ -91,76 +91,14 @@
                 </tr>
               </thead>
               <tbody>
+                {% for vd in vds %}
                 <tr>
-                  <td>Google UX Design</td>
-                  <td>$150</td>
-                  <td>40hrs</td>
-                  <td class="table-success">Accepted</td>
-                                 </tr>
-                <tr>
-                  <td>Digital Product Management</td>
-                  <td>$200</td>
-                  <td>20hrs</td>
-                  <td class="table-danger">Rejected</td>
-                  
-                </tr>
-                <tr>
-                  <td>Introduction to Programming with Java</td>
-                  <td>$150</td>
-                  <td>30hrs</td>
+                  <td>{{ vd.V_title }}</td>
+                  <td>{{ vd.Expected_Cost }}</td>
+                  <td>{{ vd.Duration }}</td>
                   <td class="table-warning">Pending</td>
-                  
                 </tr>
-                <tr>
-                  <td>Scrum Master Certification</td>
-                  <td>$250</td>
-                  <td>30hrs</td>
-                  <td class="table-warning">Pending</td>
-                  
-                </tr>
-                <tr>
-                  <td>DeVops on AWS</td>
-                  <td>$300</td>
-                  <td>40hrs</td>
-                  <td class="table-danger">Rejected</td>
-                  
-                </tr>
-                <tr>
-                  <td>Python for Everybody Specilization</td>
-                  <td>$200</td>
-                  <td>40hrs</td>
-                  <td class="table-success">Accepted</td>
-                  
-                </tr>
-                
-                <tr>
-                  <td>Meta iOS Developer</td>
-                  <td>$100</td>
-                  <td>30hrs</td>
-                  <td class="table-warning">Pending</td>
-                  
-                </tr>
-                <tr>
-                  <td>Algorithm Specilization</td>
-                  <td>$200</td>
-                  <td>20hrs</td>
-                  <td class="table-danger">Rejected</td>
-                  
-                </tr>
-                <tr>
-                  <td>DeVop,Cloud and Agile Foundation</td>
-                  <td>$150</td>
-                  <td>30hrs</td>
-                  <td class="table-success">Accepted</td>
-                  
-                </tr>
-                <tr>
-                  <td>Machine Learning</td>
-                  <td>$250</td>
-                  <td>40hrs</td>
-                  <td class="table-warning">Pending</td>
-                 
-                </tr>
+                {% endfor %}
                
               </tbody>
             </table>

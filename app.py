@@ -31,44 +31,51 @@ def auction(course_id):
 
 @app.route('/auction-details/vendor-registration-form/<int:course_id>',methods=['POST', 'GET'])
 def form(course_id):
-  forms = []
-  conn = connection()
-  cursor = conn.cursor()
-  if request.method == 'GET':
-    cursor.execute("select * from course where Course_id=?",course_id)
-    for row in cursor.fetchall():
-        forms.append({"course_id": row[0], "c_title": row[1], "c_description": row[2], "image_url": row[3]})
-    conn.close()
-    return render_template('bid_v_form.html',forms = forms)
-  if request.method == 'POST':
-        Vendor_ID = request.form["Vendor_ID"]
-        Vendor_Name = request.form["Vendor_Name"]
-        Duration = int(request.form["Duration"])
-        Experience = int(request.form["Experience"])
-        Expected_Cost = float(request.form["Expected_Cost"])
-        Demo = request.form["Demo"]
-        Skills = request.form["Skills"]
-        BID_ID = int(request.form["BID_ID"])
-        Description = request.form["Description"]
-        conn = connection()
-        cursor = conn.cursor()
-        cursor.execute("INSERT INTO dbo.vendor (Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description) VALUES (?, ?, ?, ?, ?, ?,? ,?,?)", Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description)
-        conn.commit()
+    forms = []
+    conn = connection()
+    cursor = conn.cursor()
+    if request.method == 'GET':
+        cursor.execute("select * from course where Course_id=?",course_id)
+        for row in cursor.fetchall():
+            forms.append({"course_id": row[0], "c_title": row[1], "c_description": row[2], "image_url": row[3]})
         conn.close()
         return render_template('bid_v_form.html',forms = forms)
 
-@app.route('/vendor-dashboard')
+
+
+
+    # if request.method == 'POST':
+    #     V_title = request.form["V_title"]
+    #     Vendor_ID = request.form["Vendor_ID"]
+    #     Vendor_Name = request.form["Vendor_Name"]
+    #     Duration = request.form["Duration"]
+    #     Experience = request.form["Experience"]
+    #     Expected_Cost = request.form["Expected_Cost"]
+    #     Demo = request.form["Demo"]
+    #     Skills = request.form["Skills"]
+    #     Bid_ID = request.form["BID_ID"]
+    #     Description = request.form["Description"]
+    #     conn = connection()
+    #     cursor = conn.cursor()
+    #     cursor.execute("INSERT INTO dbo.vendor(V_title,Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",V_title, Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,Bid_ID,Description)
+    #     conn.commit()
+    #     conn.close()
+    #     return render_template("bid_v_dashboard.html")
+       
+    
+
+@app.route('/vendor-dashboard-page')
 def vdash():
-    vendors = []
+    vds = []
     conn = connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT title,expectedCost,duration FROM dbo.vendor")
+    cursor.execute("SELECT V_title,Expected_Cost,Duration FROM dbo.vendor")
     for row in cursor.fetchall():
-        vendors.append({"title": row[0], "expectedCost": row[1],"duration": row[2]})        
+        vds.append({"V_title": row[0], "Expected_Cost": row[1],"Duration": row[2]})        
         # vendors.append({"title": row[0], "duration": row[1], "experience": row[2], "expectedCost": row[3],"demo": row[4], "skills": row[5], "bidno": row[6], "description": row[7]})
     conn.close()
-    # return render_template("bid_v_dashboard.html", vendors = vendors)
-    return redirect('/')
+    return render_template("bid_v_dashboard.html",vds=vds)
+   
 
   
      
@@ -78,22 +85,10 @@ def activebid():
 
 @app.route('/approver-dashboard')
 def adash():
-    return render_template('bid_approver_dashboard.html')    
-@app.route("/confirm", methods=['POST', 'GET'])
-def suggestions():
-    if request.method == 'POST':
-        n = request.form.get('fname')
-        a = request.form.get('lname')
-        c = request.form.get('city')
-        d = request.form.get('comments')
-        return  render_template('page4.html',fname=n,lname=a,city=c,comments=d)
+    return  render_template('bid_approver_dashboard.html')
+  
+    
 
-@app.route("/final",methods=['GET','POST'])
-def final():
-    if request.method == 'POST':
-        return redirect(url_for('final'))
-    else:
-        return  render_template('final.html')
 
 if __name__=='__main__':
     app.run(debug=True)

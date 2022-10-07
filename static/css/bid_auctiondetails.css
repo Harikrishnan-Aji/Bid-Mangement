@@ -256,7 +256,7 @@ border-radius: 14px;
     padding: 150px; 
     width: 250px;
     height: 30px;  
-    transform: translate(126%, -50%);
+    transform: translate(126%, -28%);
     filter: drop-shadow(10px 2px 9px #c8c6c6);
 }
 
@@ -350,7 +350,7 @@ border-radius: 14px;
     padding: 150px; 
     width: 250px;
     height: 30px;  
-    transform: translate(126%, -75%);
+    transform: translate(126%, -55%);
     filter: drop-shadow(10px 2px 9px #c8c6c6);
   overflow-y: scroll;
   scrollbar-color: rebeccapurple green;

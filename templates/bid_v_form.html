@@ -27,9 +27,12 @@
         <div class="f-body">
                 <div class="container" id="container">
                     <div class="form-container sign-up-container">
-                        <form action="#">
+                        <form action="#" method="POST">
                             <h1 style="text-align: center;">Form successfully submitted</h1>
-                          
+                            <td>
+                                <label for="Vendor_ID"> Vendor Id</label>
+                                <input type="text" id="Vendor_ID" name="Vendor_ID" placeholder="Enter the Vendor id" style="width:89%;"class="f-form-contents">
+                            </td>
                             <p>You can only fill out this form for a bid.</p>
 
                             <button class="f-body-button"><a href="http://127.0.0.1:5000//vendor-dashboard">Check Status</a></button>
@@ -44,9 +47,9 @@
                                 
                                 <tr style="width: 50px;">
                                     <br>
-                                    {% for form in forms %}
-                                        <label for="fname"><i  style="margin-left: -293px;  "></i> Course title </label>
-                                        <input type="text" id="fname" name="firstname" value="{{ form.c_title }}" class="f-form-title" style="width: 87%;outline-color: #eee;" disabled="disabled">
+                                        {% for form in forms %}
+                                        <label for="V_title"><i  style="margin-left: -293px;  "></i> Course title </label>
+                                        <input type="text" id="V_title" name="V_title" value="{{ form.c_title }}" class="f-form-title" style="width: 87%;outline-color: #eee;" disabled="disabled">
                                         {% endfor %}     
                                     </tr>
                                 <tr>
@@ -86,8 +89,8 @@
                                         <input type="text" id="Skills" name="Skills" placeholder="Enter the skill Details" style="width:89%;"class="f-form-contents">
                                     </td>
                                     <td>
-                                        <label for="expmonth">Bid ID</label>
-                                        <input type="text" id="expmonth" name="expmonth" placeholder="Generates automatically" style="width:89%;"class="f-form-contents" disabled="disabled">
+                                        <label for="BID_ID">Bid ID</label>
+                                        <input type="text" id="expmoBID_IDnth" name="BID_ID" placeholder="Generates automatically" style="width:89%;"class="f-form-contents" disabled="disabled">
                                     </td>
                                 </tr>
                                 
@@ -100,7 +103,7 @@
                                 </tr>
                             </table>            
                           
-                            <button class="f-body-button"id="Submit">Submit</button>
+                            <button class="f-body-button"id="submit" name="submit">Submit</button>
                         </form>
                     </div>
                     <div class="overlay-container">
