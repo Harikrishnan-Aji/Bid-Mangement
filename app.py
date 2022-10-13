@@ -41,26 +41,23 @@ def form(course_id):
         conn.close()
         return render_template('bid_v_form.html',forms = forms)
 
-
-
-
-    # if request.method == 'POST':
-    #     V_title = request.form["V_title"]
-    #     Vendor_ID = request.form["Vendor_ID"]
-    #     Vendor_Name = request.form["Vendor_Name"]
-    #     Duration = request.form["Duration"]
-    #     Experience = request.form["Experience"]
-    #     Expected_Cost = request.form["Expected_Cost"]
-    #     Demo = request.form["Demo"]
-    #     Skills = request.form["Skills"]
-    #     Bid_ID = request.form["BID_ID"]
-    #     Description = request.form["Description"]
-    #     conn = connection()
-    #     cursor = conn.cursor()
-    #     cursor.execute("INSERT INTO dbo.vendor(V_title,Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,BID_ID,Description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",V_title, Vendor_ID,Vendor_Name,Duration,Experience,Expected_Cost,Demo,Skills,Bid_ID,Description)
-    #     conn.commit()
-    #     conn.close()
-    #     return render_template("bid_v_dashboard.html")
+    if request.method == 'POST':
+        V_title = request.form["V_title"]
+        Vendor_ID = request.form["Vendor_ID"]
+        Vendor_Name = request.form["Vendor_Name"]
+        Duration = request.form["Duration"]
+        Experience = request.form["Experience"]
+        Expected_Cost = request.form["Expected_Cost"]
+        Demo = request.form["Demo"]
+        Skills = request.form["Skills"]
+        Bid_ID = request.form["BID_ID"]
+        Description = request.form["Description"]
+        conn = connection()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO dbo.vendor(V_title, Vendor_ID, Vendor_Name, Duration, Experience, Expected_Cost, Demo, Skills, BID_ID, Description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", V_title, Vendor_ID, Vendor_Name, Duration, Experience, Expected_Cost, Demo, Skills, Bid_ID, Description)
+        conn.commit()
+        conn.close()
+        return render_template("bid_v_dashboard.html")
        
     
 
