@@ -61,7 +61,7 @@ def form(course_id):
        
     
 
-@app.route('/vendor-dashboard-page')
+@app.route('/vendor-dashboard')
 def vdash():
     vds = []
     conn = connection()

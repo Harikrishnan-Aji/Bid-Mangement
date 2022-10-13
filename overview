@@ -1,0 +1,7 @@
+--Bid Management Page Details--
+1.Bid Home Page(Bid Management home page)(http://127.0.0.1:5000/)
+2.Auction Details page(click on any active bids)
+3.Vendor Bid Registration Form(click on place bid)
+4.Vendor Dashboard(http://127.0.0.1:5000/vendor-dashboard)
+5.Approver Activebid(http://127.0.0.1:5000/approver-active-bid)
+6.Approver Dashboard(http://127.0.0.1:5000/approver-dashboard)
